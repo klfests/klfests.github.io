@@ -216,19 +216,18 @@ header .logo:hover img {
   bottom: 2px;
 }
 .homepage .maincontent .scroll-down i {
-  font-size: x-large;
-  animation: animate 1s linear infinite;
+  font-size: medium;
+  animation: animate 1s ease infinite;
 }
 
 @keyframes animate {
   0%,
   100% {
     transform: translateY(0px);
-    font-size: 18px;
+    transform: scale(1.1);
   }
   50% {
-    transform: translateY(3px);
-    font-size: medium;
+    transform: translateY(4px);
   }
 }
 
