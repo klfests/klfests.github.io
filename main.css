@@ -29,6 +29,11 @@
   src: url("../Fonts/Youmurdererbb-pwoK.otf");
 }
 
+html::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 * {
   margin: 0;
   padding: 0;
