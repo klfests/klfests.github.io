@@ -144,6 +144,13 @@ header .logo:hover img {
   /* color: #000; */
 }
 
+.homepage .maincontent p span {
+  color: #ff8c00;
+  font-size: 20px;
+  font-weight: bold;
+  /* animation: title 1s ease-in linear; */
+}
+
 .homepage .maincontent input[type="text"] {
   border: none !important;
   padding-left: 10px;
