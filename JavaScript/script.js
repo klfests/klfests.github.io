@@ -1,6 +1,8 @@
 var islogged = true,
   isSearched = true,
-  festname = "Select";
+  festname = "Select",
+  mailSent = false,
+  mailVerified = false;
 
 window.onload = function onpageload() {
   var el1 = document.getElementById("login");
@@ -26,15 +28,28 @@ window.onload = function onpageload() {
   // } catch (error) {}
   try {
     var title = document.getElementById("title");
-    var font = ["abhi1", "abhi2", "abhi3", "abhi4", "abhi5", "abhi6", "abhi7"];
-    title.style.fontFamily = font[Math.floor(Math.random() * font.length)];
-    if (
-      title.style.fontFamily === "abhi7" ||
-      title.style.fontFamily === "abhi2"
-    ) {
+    var title2 = document.getElementById("title2");
+    var font = ["abhi1", "abhi2", "abhi3", "abhi4", "abhi5"];
+    var abhi = font[Math.floor(Math.random() * font.length)];
+    title.style.fontFamily = abhi;
+    title2.style.fontFamily = abhi;
+    if (title.style.fontFamily === "abhi6") {
       title.style.fontSize = 70 + "px";
+      title2.style.fontSize = 70 + "px";
     }
   } catch (error) {}
+  var typed1 = new Typed(".typed", {
+    strings: [" ", "Faster", "Smoother", "Easier"],
+    typeSpeed: 100,
+    backSpeed: 70,
+    loop: true,
+  });
+  setTimeout(() => {
+    var typed2 = new Typed(".title", {
+      strings: ["Welcome To KL FESTS"],
+      typeSpeed: 150,
+    });
+  }, 500);
 };
 
 /* <------------------------------ Search Suggestion Start ------------------------------> */
@@ -89,8 +104,32 @@ function menutoggle() {
 
 /* ------------------------------- Menu Toggle End ------------------------------- */
 
-/*function loginValidate() {
-  var email = document.myform.email.value;
+/* ------------------------------- OTP Logic Start ------------------------------- */
+
+var otp;
+function generateOTP() {
+  var digits = "0123456789";
+  let OTP = "";
+  for (let i = 0; i < 6; i++) {
+    OTP += digits[Math.floor(Math.random() * 10)];
+  }
+  this.otp = OTP;
+  return OTP;
+}
+
+function validateOTP() {
+  var OTP = document.getElementById("otp-field");
+  if (OTP === otp) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/* ------------------------------- OTP Logic End ------------------------------- */
+
+/*function loginValidate(usermail) {
+  var email = usermail;
   var atpos = email.indexOf("@");
   var dotpos = email.x.lastIndexOf(".");
   if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
@@ -104,19 +143,19 @@ function menutoggle() {
   } else {
     return true;
   }
-}*/
+}
 
-/*function signupValidate() {
-  var email = document.myform.email.value;
+function signupValidate(userMail) {
+  var email = userMail;
   var atpos = email.indexOf("@");
   var dotpos = email.x.lastIndexOf(".");
   if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
     alert(
-      "Please enter a valid e-mail address \n atpostion:" +
-        atposition +
-        "\n dotposition:" +
-        dotposition
-    );
+        "Please enter a valid e-mail address \n atpostion:" +
+          atposition +
+          "\n dotposition:" +
+          dotposition
+      );
     return false;
   } else {
     return true;
