@@ -129,11 +129,6 @@ header .logo:hover img {
   font-size: 50px;
 }
 
-.homepage .maincontent h1 span {
-  font-family: abhi1;
-  font-size: 50px;
-}
-
 .homepage *::selection {
   background: #829399;
 }
