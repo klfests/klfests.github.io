@@ -34,14 +34,31 @@
         <li class="li" id="signup">
           <a href="../Registration/register.html">Sign Up</a>
         </li>
-        <li class="li hide" id="account">
-          <a href="#">Account</a>
-          <span class="border">|</span>
-          <i
-            onclick="menutoggle()"
-            class="fa fa-caret-down fa-lg angle"
-            aria-hidden="true"
-          ></i>
+                <li class="li hide" id="account">
+          <a href="#"
+            >Account
+            <span class="border">|</span>
+            <i
+              onclick="menutoggle()"
+              class="fa fa-caret-down fa-lg angle"
+              aria-hidden="true"
+            ></i>
+          </a>
+          <div class="account-dropdown" id="">
+            <ul>
+              <li>
+                <a href=""> <i class="fa fa-user"></i> Profile </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-gear"></i> Settings </a>
+              </li>
+              <li>
+                <span onclick="signout()" href="">
+                  <i class="fa fa-sign-out"></i> Sign Out
+                </span>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </header>
@@ -51,7 +68,6 @@
       <div class="maincontent">
         <!-- <h1 id="title">Welcome To KL Fests</h1> -->
         <h1 id="title">
-          &nbsp;
           <span id="title2" class="title"></span>
         </h1>
         <p>Registration For Fests made&nbsp; <span class="typed"> </span></p>
