@@ -1,28 +1,7 @@
 # Welcome To KL Fests
 
 
-> Team Member Details [S - A - N - S].
->                      I - B - I - U
->                      V - H - K - R
->                      A - I - E - Y
->                      S - N - S - A
->                      A - A - H - K
->                      I - V - S - I
->                      Y - P - A - R
->                      A - A - I - A
->                      R - M - R - N
->                      L - A - A - J
->                      A - R - K - O
->                      G - T - O - N
->                      A - H - T - N
->                      D - I - I - A
->                      D           L
->                      A           A
->                                  G
->                                  A
->                                  D
->                                  D
->                                  A
+> Team Member Details [S - A - N - S]
 
 | ```ID Number```| ```Name```                                                             | ```Role```                  |
 |----------------|------------------------------------------------------------------------|-----------------------------|
