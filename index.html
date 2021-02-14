@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../JavaScript/typed.js"></script>
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/main.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>KLU Fests</title>
+  </head>
+  <!-- <body onload="onpageloading()"> -->
+  <body>
+    <header>
+      <a href="#" class="logo"
+        ><img src="../images/logo2.png" alt="KL Fests"
+      /></a>
+      <ul class="mynav">
+        <li class="li">
+          <a href="#">Home</a>
+        </li>
+        <li class="li"><a href="../Fest/fest.html">Fest Registration</a></li>
+        <li class="li"><a href="../Team/team.html">Our Team</a></li>
+        <li class="li" id="login">
+          <a href="../Login/login.html">Log in</a>
+        </li>
+        <li class="li" id="signup">
+          <a href="../Registration/register.html">Sign Up</a>
+        </li>
+        <li class="li hide" id="account">
+          <a href="#"
+            >Account
+            <span class="border">|</span>
+            <i
+              onclick="menutoggle()"
+              class="fa fa-caret-down fa-lg angle"
+              aria-hidden="true"
+            ></i>
+          </a>
+          <div class="account-dropdown" id="">
+            <ul>
+              <li>
+                <a href=""> <i class="fa fa-user"></i> Profile </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-gear"></i> Settings </a>
+              </li>
+              <li>
+                <span onclick="signout()" href="">
+                  <i class="fa fa-sign-out"></i> Sign Out
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Fests Details Starts -->
+    <section class="homepage">
+      <div class="maincontent">
+        <!-- <h1 id="title">Welcome To KL Fests</h1> -->
+        <h1 id="title">
+          <span id="title2" class="title"></span>
+        </h1>
+        <p>Registration For Fests made&nbsp; <span class="typed"> </span></p>
+        <input
+          type="text"
+          class="search"
+          name="search"
+          id="search"
+          onkeyup="ipbx(this)"
+          placeholder="Search For The Fests"
+        />
+        <button type="submit" onclick="search()">Search</button>
+        <div class="autocom-box" id="autocom-box"></div>
+        <div class="scroll-down" id="scroll-down">
+          <i class="fa fa-angle-double-down"></i><br />
+          <h5>Scroll Down For Fests Details</h5>
+        </div>
+      </div>
+    </section>
+    <section class="fests">
+      <h1>Fests Details</h1>
+      <div class="fests-boxes">
+        <a href="" id="technical">
+          <div class="fest-box">
+            <div class="fest-double-box">
+              <h2>SAMYAK</h2>
+              <img
+                style="width: 386px; height: 250px"
+                src="../images/samyak.jfif"
+                alt=""
+              />
+              <p class="fest-details">
+                National Level Technical Fest Conduted By <br />
+                KL University
+              </p>
+            </div>
+          </div>
+        </a>
+        <br />
+        <a href="" id="cultural">
+          <div class="fest-box">
+            <div class="fest-double-box">
+              <h2>Surabhi</h2>
+              <img
+                style="width: 386px; height: 250px"
+                src="../images/surabhi.jfif"
+                alt=""
+              />
+              <p class="fest-details">
+                Campus Level Cultural Fest Conduted By <br />
+                KL University
+              </p>
+            </div>
+          </div>
+        </a>
+        <br />
+        <a href="" id="cse">
+          <div class="fest-box">
+            <div class="fest-double-box">
+              <h2>#include</h2>
+              <img
+                style="width: 386px; height: 250px"
+                src="../images/hash-include.jfif"
+                alt=""
+              />
+              <p class="fest-details">
+                Branch Level Fest Conduted By CSE Students Of KL University
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="" class="ece">
+          <div class="fest-box">
+            <div class="fest-double-box">
+              <h2>Zrotriya</h2>
+              <img
+                style="width: 386px; height: 250px"
+                src="../images/zrotriya.jpg"
+                alt=""
+              />
+              <p class="fest-details">
+                Branch Level Fest Conduted By ECE Students Of KL University
+              </p>
+            </div>
+          </div>
+        </a>
+        <br />
+        <a href="" id="eee">
+          <div class="fest-box">
+            <div class="fest-double-box">
+              <h2>Spark</h2>
+              <img
+                style="width: 386px; height: 250px"
+                src="../images/spark.jfif"
+                alt=""
+              />
+              <p class="fest-details">
+                Branch Level Fest Conduted By EEE Students Of KL University
+              </p>
+            </div>
+          </div>
+        </a>
+        <br />
+        <a href="" id="mech">
+          <div class="fest-box">
+            <div class="fest-double-box">
+              <h2>Yantrik</h2>
+              <img
+                style="width: 386px; height: 250px"
+                src="../images/yantrik.jfif"
+                alt=""
+              />
+              <p class="fest-details">
+                Branch Level Fest Conduted By Mechanical Students Of KL
+                University
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="" class="civil">
+          <div class="fest-box">
+            <div class="fest-double-box">
+              <h2>Race</h2>
+              <img
+                style="width: 386px; height: 250px"
+                src="../images/race.jfif"
+                alt=""
+              />
+              <p class="fest-details">
+                Branch Level Fest Conduted By Civil Students Of KL University
+              </p>
+            </div>
+          </div>
+        </a>
+        <br />
+      </div>
+      <div class="footer">
+        <h2>
+          Note: Do Carry The Registration Confirmation Receipt On the Day Of
+          Fest
+        </h2>
+        <br />
+        <p>
+          &copy; Copyright <span id="date"></span>. All rights reserved with KL
+          Fests
+        </p>
+      </div>
+
+      <div class="scroll-up" id="scroll-up" style="color: #fff">
+        <i
+          class="fa fa-arrow-circle-o-up"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+        ></i>
+        <p>Go To Top</p>
+      </div>
+    </section>
+  </body>
+</html>
