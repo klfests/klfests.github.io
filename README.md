@@ -11,5 +11,6 @@
 |Faculty         |[<b>S</b>urya Kiran Jonnalagadda](https://github.com/suryakiran25oct93) |Master, Evaluator            |
 
 
-@b {
+b {
+  font-size: 50px;
 }
