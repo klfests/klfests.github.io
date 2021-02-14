@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./register.css" />
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/signup.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>KLU Fests</title>
+  </head>
+  <body>
+    <header>
+      <a href="../main/main.html" class="logo"
+        ><img src="../images/logo2.png" alt="KL Fests"
+      /></a>
+      <ul class="mynav">
+        <li class="li">
+          <a href="../main/main.html">Home</a>
+        </li>
+        <li class="li"><a href="../Fest/fest.html">Fest Registration</a></li>
+        <li class="li"><a href="../Team/team.html">Our Team</a></li>
+        <li class="li" id="login">
+          <a href="../Login/login.html">Log in</a>
+        </li>
+        <li class="li" id="signup">
+          <a href="#">Sign Up</a>
+        </li>
+        <li class="li hide" id="account">
+          <a href="#"
+            >Account
+            <span class="border">|</span>
+            <i
+              onclick="menutoggle()"
+              class="fa fa-caret-down fa-lg angle"
+              aria-hidden="true"
+            ></i>
+          </a>
+          <div class="account-dropdown" id="">
+            <ul>
+              <li>
+                <a href=""> <i class="fa fa-user"></i> Profile </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-gear"></i> Settings </a>
+              </li>
+              <li>
+                <span onclick="signout()" href="">
+                  <i class="fa fa-sign-out"></i> Sign Out
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <!-- Registration Form Starts -->
+    <section class="loginForm">
+      <div class="logBox">
+        <h3 class="logTitle">We're Happy To invite You</h3>
+        <br />
+        <form
+          action=""
+          onsubmit="return signupValidate()"
+          name="log"
+          class="logForm"
+        >
+          <label for="email">Name<span class="req">*</span></label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required="required"
+          />
+          <label for="email">Email Address<span class="req">*</span></label>
+          <input
+            type="text"
+            name="email"
+            placeholder="Email Address"
+            required="required"
+          />
+          <label for="pwd">Password<span class="req">*</span></label>
+          <input
+            type="password"
+            name="pwd"
+            placeholder="Password"
+            required="required"
+          />
+          <label for="cnfrmpwd"
+            >Confirm Password<span class="req">*</span></label
+          >
+          <input
+            type="password"
+            name="cnfrmpwd"
+            placeholder="Confirm Password"
+            required="required"
+          />
+          <div class="submitbtn">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

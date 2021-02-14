@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fest.css" />
+    <script src="../JavaScript/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>KLU Fests</title>
+  </head>
+  <body>
+    <header>
+      <a href="../main/main.html" class="logo"
+        ><img src="../images/logo2.png" alt="KL Fests"
+      /></a>
+      <ul class="mynav">
+        <li class="li">
+          <a href="../main/main.html">Home</a>
+        </li>
+        <li class="li"><a href="#">Fest Registration</a></li>
+        <li class="li"><a href="../Team/team.html">Our Team</a></li>
+        <li class="li" id="login">
+          <a href="../Login/login.html">Log in</a>
+        </li>
+        <li class="li" id="signup">
+          <a href="../Registration/register.html">Sign Up</a>
+        </li>
+        <li class="li hide" id="account">
+          <a href="#"
+            >Account
+            <span class="border">|</span>
+            <i
+              onclick="menutoggle()"
+              class="fa fa-caret-down fa-lg angle"
+              aria-hidden="true"
+            ></i>
+          </a>
+          <div class="account-dropdown" id="">
+            <ul>
+              <li>
+                <a href=""> <i class="fa fa-user"></i> Profile </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-gear"></i> Settings </a>
+              </li>
+              <li>
+                <span onclick="signout()" href="">
+                  <i class="fa fa-sign-out"></i> Sign Out
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <!-- Fest Registration Form Starts Starts -->
+  </body>
+</html>

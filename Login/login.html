@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <script src="../JavaScript/script.js"></script>
+    <script src="../JavaScript/login.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>KLU Fests</title>
+  </head>
+  <body>
+    <header>
+      <a href="../main/main.html" class="logo"
+        ><img src="../images/logo2.png" alt="KL Fests"
+      /></a>
+      <ul class="mynav">
+        <li class="li">
+          <a href="../main/main.html">Home</a>
+        </li>
+        <li class="li"><a href="../Fest/fest.html">Fest Registration</a></li>
+        <li class="li"><a href="../Team/team.html">Our Team</a></li>
+        <li class="li" id="login">
+          <a href="#">Log in</a>
+        </li>
+        <li class="li" id="signup">
+          <a href="../Registration/register.html">Sign Up</a>
+        </li>
+        <li class="li hide" id="account">
+          <a href="#"
+            >Account
+            <span class="border">|</span>
+            <i
+              onclick="menutoggle()"
+              class="fa fa-caret-down fa-lg angle"
+              aria-hidden="true"
+            ></i>
+          </a>
+          <div class="account-dropdown" id="">
+            <ul>
+              <li>
+                <a href=""> <i class="fa fa-user"></i> Profile </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-gear"></i> Settings </a>
+              </li>
+              <li>
+                <span onclick="signout()" href="">
+                  <i class="fa fa-sign-out"></i> Sign Out
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <!-- Login Form Starts -->
+    <section class="loginForm">
+      <div class="logBox">
+        <h3 class="logTitle">Good To See You Again</h3>
+        <br />
+        <form
+          action=""
+          onsubmit="return loginValidate()"
+          name="log"
+          class="logForm"
+        >
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            name="email"
+            placeholder="Email Address"
+            required="required"
+          />
+          <label for="pwd">Password</label>
+          <input
+            type="password"
+            name="pwd"
+            placeholder="Password"
+            required="required"
+          />
+          <div class="content">
+            <div class="links">
+              <p class="forgotpwd">
+                <a href="../Registration/register.html"
+                  ><span>Forgot My Password</span></a
+                >
+              </p>
+              <p class="newMem">
+                New One Click
+                <a href="../Registration/register.html">Here</a> To logUp
+              </p>
+            </div>
+            <div class="submitbtn">
+              <input type="submit" value="login" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
